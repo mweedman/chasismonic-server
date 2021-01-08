@@ -27,6 +27,10 @@ app.use('/api/user', userRouter);
 app.use('/api/art', artRouter);
 app.use('/api/blog', blogRouter);
 
+app.get('/', (req, res) => {
+  res.send('Hello!');
+});
+
 app.use(errorHandler);
 
 
