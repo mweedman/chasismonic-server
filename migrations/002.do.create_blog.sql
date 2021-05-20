@@ -3,5 +3,6 @@ CREATE TABLE "blog" (
   "entry_title" TEXT NOT NULL,
   "content" TEXT,
   "entry_date" TIMESTAMP,
-  "photo_link" VARCHAR(255)
+  "photo_link" VARCHAR(255),
+  "author" INTEGER REFERENCES "user"(id)
 );

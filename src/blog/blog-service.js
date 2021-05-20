@@ -1,5 +1,3 @@
-
-
 const blogService = {
 
   getBlogs(db) {
