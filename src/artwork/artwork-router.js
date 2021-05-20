@@ -14,16 +14,16 @@ artRouter
       );
       res.json({
         artwork
-      })
-      next()
+      });
+      next();
     }
     catch(error) {
-      next(error)
+      next(error);
     }
   })
   .post(jsonBodyParser, async(req, res, next) => {
     const newArt = req.body;
 
-  })
+  });
 
 module.exports = artRouter;

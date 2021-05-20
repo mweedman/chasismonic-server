@@ -5,7 +5,9 @@ const blogService = require('./blog-service');
 const blogRouter = express.Router();
 const jsonBodyParser = express.json();
 
-blogRouter;
+blogRouter
+  .route('/blog')
+  .get();
 
 
 module.exports = blogRouter;
